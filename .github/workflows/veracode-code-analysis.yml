@@ -11,7 +11,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: Set isTag # name that will appear in the logging for this section
-            run: echo "${{ toJson(github.event.client_payload) }}"
+            run: echo "${{ toJson(github.event.client_payload.sha) }}"
   register:
     uses: ./.github/workflows/veracode-check-run.yml
     with:
