@@ -7,6 +7,11 @@ on:
     types: [java-maven-pipeline-scan, java-gradle-pipeline-scan, source-code-pipeline-scan, dot-net-pipeline-scan, dot-net-policy-scan, java-maven-policy-scan, java-gradle-policy-scan, source-code-policy-scan]
 
 jobs:
+  print:
+      runs-on: ubuntu-latest
+      steps:
+          - name: Set isTag # name that will appear in the logging for this section
+            run: echo "${{ github.event.client_payload }}"
   register:
     uses: ./.github/workflows/veracode-check-run.yml
     with:
