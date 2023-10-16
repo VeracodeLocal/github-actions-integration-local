@@ -23,7 +23,7 @@ jobs:
     uses: ./.github/workflows/veracode-build-artifact-for-scanning.yml
     with:
       repository: ${{ github.event.client_payload.repository.full_name }}
-      ref: ${{ github.event.client_payload.sha }}
+      ref: "b8877546428f538f218d82e73930bb773690e3cc"
       token: ${{ github.event.client_payload.token }}
       event_name: ${{ github.event.action }}
 
