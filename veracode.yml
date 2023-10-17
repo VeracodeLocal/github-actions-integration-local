@@ -18,7 +18,7 @@ veracode_static_scan:
       - synchronize
     target_branch:
       - master 
-  # What branch would you like to use for platform analysis 
+  # What branch would you like to use for platform analysis s
   # By selecting a branch here - Veracode will save your last scan result
   # As an App Profile - given the current name of your scanned repo
   # Use 'none' if you would not like any scans saved to the platform
