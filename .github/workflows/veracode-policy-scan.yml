@@ -33,6 +33,7 @@ jobs:
         run: |
           artifact_file=$(ls -1 ./veracode_artifact_directory | head -n 1)
           echo "veracode_artifact=$artifact_file" >> $GITHUB_ENV
+          echo "policy_name " >> ${{ inputs.policy_name }}
       # run the policy scan action
       - name: Veracoe Upload and Scan Action Step
         uses: veracode/uploadandscan-action@main
