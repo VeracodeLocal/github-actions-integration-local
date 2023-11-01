@@ -1,3 +1,18 @@
+# list of repo which will be use to execute the configured scans
 repos_to_scan:
   - example-javascript
   - java-api-goat
+
+
+# static_scan will be considered only for below mentioned repos
+repos_to_scan_static_scan:
+  - java-api-goat
+
+# sca_scan will be considered only for below mentioned repos
+repos_to_scan_sca_scan:
+  - example-javascript
+  - java-api-goat
+
+# iac_secrets_scan will be considered only for below mentioned repos
+ repos_to_scan_iac_secrets_scan: 
+   - example-javascript
