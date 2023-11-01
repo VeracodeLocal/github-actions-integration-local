@@ -1,4 +1,4 @@
-# list of repo which will be use to execute the configured scans
+# list of repos which will be use to execute all the configured scans
 repos_to_scan:
   - example-javascript
   - java-api-goat
